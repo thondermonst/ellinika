@@ -48,6 +48,14 @@ $config = [
         */
     ],
     'params' => $params,
+    'modules' => [
+        'tests' => [
+            'class' => 'app\modules\tests\Module',
+        ],
+        'vkeyboard' => [
+            'class' => 'app\modules\vkeyboard\Module',
+        ],
+    ],
 ];
 
 if (YII_ENV_DEV) {
