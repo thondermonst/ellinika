@@ -27,7 +27,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Ellinika',
+        'brandLabel' => 'Μαθαίνω ελληνικά',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -37,9 +37,9 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Tests', 'url' => ['/tests/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Ελληνικά 1.1', 'url' => ['/tests/index']],
+            ['label' => 'Σχετικά με', 'url' => ['/site/about']],
+            ['label' => 'Επικοινωνία', 'url' => ['/site/contact']],
         ],
     ]);
     NavBar::end();
