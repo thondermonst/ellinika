@@ -7,10 +7,6 @@ $(function() {
 
     $('.images-container .images .image img').on('click', showFullImage);
 
-    $('#close-full-image span').on('click', function() {
-        console.log('closing');
-    });
-
     function setImageGalleryWidth() {
         var width = getWidth();
 
@@ -53,13 +49,8 @@ $(function() {
 
     function showFullImage() {
         var src = $(this).attr('src');
-        var img = '<img src="' + src + '" /><button id="close-full-image" class="close" onclick="$(this).parent().hide();"><span class="glyphicon glyphicon-remove-circle"></span></button>';
+        var img = '<img src="' + src + '" /><button id="close-full-image" class="btn btn-lg close" onclick="$(this).parent().hide();"><span class="glyphicon glyphicon-remove-circle"></span></button><button id="backward-full-image" class="btn btn-lg"><span class="glyphicon glyphicon-chevron-left"></button><button id="forward-full-image" class="btn btn-lg"><span class="glyphicon glyphicon-chevron-right"></button>';
         $('#full-image').html(img);
         $('#full-image').show();
-    }
-
-    function closeFullImage() {
-        console.log('closing');
-        $('#full-image').hide();
     }
 })
